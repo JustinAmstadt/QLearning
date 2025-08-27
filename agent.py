@@ -64,7 +64,7 @@ class Agent:
     def episode_end_report(self):
         print(f"Num Timesteps: {self.timestep}")
         print(f"Epsilon: {self.epsilon_decay.epsilon}")
-        print(f"Cumuluative Reward: {self.cumulative_reward}")
+        print(f"Cumulative Reward: {self.cumulative_reward}")
 
     def epsilon_strategy_decay(self):
         self.epsilon_decay.decay()
