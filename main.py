@@ -15,7 +15,7 @@ def main():
     agent = Agent()
 
     total_episodes = 15
-    print(f"Total Episodes: {total_episodes}")
+    print(f"Total Episodes: {total_episodes}\n")
 
     for i in range(total_episodes):
         is_done = False

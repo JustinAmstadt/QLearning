@@ -10,6 +10,7 @@ I also implemented an efficiency penalty to encourage the fewest amount of steps
 
 ```
 Total Episodes: 15
+
 Num Timesteps: 5
 Epsilon: 1.0
 Cumuluative Reward: -7.0
