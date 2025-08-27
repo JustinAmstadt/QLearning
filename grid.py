@@ -54,7 +54,7 @@ class Grid:
 
         # Don't penalize the final step to goal
         if not is_done:
-            reward -= self._get_efficiency_penalty()
+            reward += self._get_efficiency_penalty()
 
         return (reward, is_done)
 

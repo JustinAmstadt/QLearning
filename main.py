@@ -5,13 +5,11 @@ def evaluate(agent: Agent):
     is_done = False
     while not is_done:
         print(agent.grid)
-        print("------")
+        print("--------------")
         is_done = agent.step()
 
     print(agent.grid)
-
-    agent.reset()
-
+    agent.episode_end_report()
 
 def main():
     agent = Agent()
@@ -24,7 +22,9 @@ def main():
         while not is_done:
             is_done = agent.step()
 
+        agent.episode_end_report()
         agent.reset()
+        agent.epsilon_strategy_decay()
         print("--------------")
 
     evaluate(agent)
